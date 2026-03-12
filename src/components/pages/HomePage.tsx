@@ -6,18 +6,6 @@ import { useEffect, useRef, useState } from 'react';
 
 // --- Utility Components ---
 
-const [musicPlaying, setMusicPlaying] = useState(false);
-const audioRef = useRef(null);
-useEffect(() => {
-  if (audioRef.current) {
-    if (musicPlaying) {
-      audioRef.current.play();
-    } else {
-      audioRef.current.pause();
-    }
-  }
-}, [musicPlaying]);
-
 const HeartCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isPointer, setIsPointer] = useState(false);
@@ -183,12 +171,6 @@ export default function HomePage() {
 
       <HeartCursor />
 
-      <>
-      {/* Audio Element */}
-      <audio ref={audioRef} loop>
-      <source src="https://static.wixstatic.com/mp3/217bff_5a01c1830cac44ed88c0da208d64ea74.mp3" type="audio/mpeg" />
-      </audio>
-
       {/* Global Audio Toggle */}
       <AnimatePresence>
         {storyStarted && (
@@ -230,7 +212,7 @@ export default function HomePage() {
       </AnimatePresence>
     </div>
   );
-  }
+}
 
 // --- Sections ---
 
