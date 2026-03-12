@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform, useInView } from 'framer-motion';
 import { Heart, Music, VolumeX, Sparkles, Stars } from 'lucide-react';
-import Image from '@/components/ui/image';
+import { Image } from '@/components/ui/image';
 
 // --- Utility Components ---
 
