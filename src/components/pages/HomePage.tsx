@@ -7,6 +7,15 @@ import { useEffect, useRef, useState } from 'react';
 // --- Utility Components ---
 
 const audioRef = useRef(null);
+useEffect(() => {
+  if (audioRef.current) {
+    if (musicPlaying) {
+      audioRef.current.play();
+    } else {
+      audioRef.current.pause();
+    }
+  }
+}, [musicPlaying]);
 
 const HeartCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
