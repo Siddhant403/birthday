@@ -1,8 +1,8 @@
 // HPI 1.7-G
-import React, { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence, useScroll, useTransform, useInView } from 'framer-motion';
-import { Heart, Music, VolumeX, Sparkles, Stars } from 'lucide-react';
 import { Image } from '@/components/ui/image';
+import { AnimatePresence, motion, useInView, useScroll, useTransform } from 'framer-motion';
+import { Heart, Music, Sparkles, Stars, VolumeX } from 'lucide-react';
+import { useEffect, useRef, useState } from 'react';
 
 // --- Utility Components ---
 
@@ -197,7 +197,7 @@ export default function HomePage() {
       <motion.div className="fixed inset-0 z-0 pointer-events-none" style={{ opacity: backgroundOpacity }}>
         <StarryBackground />
       </motion.div>
-      
+
       <motion.div className="fixed inset-0 z-0 pointer-events-none bg-background" style={{ opacity: lightBackgroundOpacity }}>
         <FloatingHeartsBg />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,250,205,0.4)_0%,transparent_100%)] opacity-50 mix-blend-overlay" />
@@ -338,7 +338,7 @@ function Chapter2() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center py-32 px-6 text-center relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/10 to-transparent pointer-events-none" />
-      
+
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -381,11 +381,11 @@ function Chapter3() {
 
   return (
     <section ref={ref} className="min-h-screen flex items-center justify-center py-32 px-6 relative">
-      <motion.div 
+      <motion.div
         style={{ scale, opacity }}
         className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,250,205,0.8)_0%,transparent_70%)] pointer-events-none mix-blend-multiply"
       />
-      
+
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -545,7 +545,7 @@ function Chapter6({ onReveal }: { onReveal: () => void }) {
   return (
     <section ref={ref} className="min-h-screen flex flex-col items-center justify-center py-32 px-6 text-center relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-t from-soft-glow/20 to-transparent pointer-events-none" />
-      
+
       <motion.div
         initial={{ opacity: 0, scale: 0.9 }}
         animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
@@ -556,8 +556,8 @@ function Chapter6({ onReveal }: { onReveal: () => void }) {
         <h2 className="text-4xl md:text-6xl font-heading text-red-600 mb-12">
           And Today... <br/><span className="text-red-600 italic">It's Your Birthday.</span>
         </h2>
-        
-        <motion.p 
+
+        <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 1, delay: 1 }}
@@ -592,7 +592,7 @@ function LoveLetter() {
     <section className="min-h-screen flex items-center justify-center py-32 px-6 relative bg-white/50">
       <div className="max-w-3xl mx-auto text-center relative z-10">
         <Stars className="w-12 h-12 text-soft-gold-accent mx-auto mb-12 opacity-50" />
-        
+
         <div className="space-y-12">
           {letterLines.map((line, i) => (
             <motion.p
@@ -636,13 +636,13 @@ function FinalSurprise({ onProposal, accepted }: { onProposal: (v: boolean) => v
               className="space-y-24"
             >
               <div className="space-y-8">
-                <motion.p 
+                <motion.p
                   initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 2 }}
                   className="text-2xl md:text-3xl font-light text-white/70"
                 >
                   Before this story continues...
                 </motion.p>
-                <motion.p 
+                <motion.p
                   initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 2, delay: 2 }}
                   className="text-2xl md:text-3xl font-light text-white/70"
                 >
@@ -662,13 +662,13 @@ function FinalSurprise({ onProposal, accepted }: { onProposal: (v: boolean) => v
                 </h2>
 
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                  <button 
+                  <button
                     onClick={() => onProposal(true)}
                     className="px-12 py-4 rounded-full bg-primary text-primary-foreground font-heading text-2xl hover:scale-105 hover:shadow-[0_0_30px_rgba(230,169,184,0.6)] transition-all duration-300 flex items-center gap-3"
                   >
                     <Heart className="w-6 h-6 fill-current" /> Yes
                   </button>
-                  <button 
+                  <button
                     onClick={() => onProposal(true)}
                     className="px-12 py-4 rounded-full bg-transparent border border-soft-gold-accent text-soft-gold-accent font-heading text-2xl hover:bg-soft-gold-accent hover:text-starry-night hover:scale-105 hover:shadow-[0_0_30px_rgba(218,165,32,0.4)] transition-all duration-300 flex items-center gap-3"
                   >
