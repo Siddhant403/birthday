@@ -229,7 +229,7 @@ function OpeningScene({ onBegin }: { onBegin: () => void }) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 2, delay: 1 }}
-          className="text-4xl md:text-6xl lg:text-7xl font-heading text-starry-night-foreground font-light tracking-wide"
+          className="text-5xl md:text-7xl lg:text-8xl font-heading text-starry-night-foreground font-semibold tracking-wide"
         >
           Every love story is beautiful...
         </motion.h1>
@@ -238,7 +238,7 @@ function OpeningScene({ onBegin }: { onBegin: () => void }) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 2, delay: 4 }}
-          className="text-3xl md:text-5xl lg:text-6xl font-heading text-primary italic"
+          className="text-4xl md:text-6xl lg:text-7xl font-heading text-primary italic font-semibold"
         >
           ...but ours is my favorite.
         </motion.h2>
@@ -298,10 +298,10 @@ function Chapter1() {
             <span className="w-12 h-[1px] bg-primary/60"></span>
             <span className="uppercase tracking-widest text-sm">Chapter 1</span>
           </div>
-          <h2 className="text-5xl md:text-7xl font-heading text-foreground leading-tight">
+          <h2 className="text-6xl md:text-8xl font-heading text-foreground leading-tight font-semibold">
             The Day <br/><span className="text-primary italic">Everything Changed</span>
           </h2>
-          <p className="text-xl md:text-2xl text-foreground/70 leading-relaxed font-light">
+          <p className="text-lg md:text-2xl text-foreground/80 leading-relaxed font-medium">
             When I first saw you, I didn’t know you would become the most important person in my life. It was an ordinary day that suddenly became the start of my favorite adventure.
           </p>
         </motion.div>
@@ -339,11 +339,11 @@ function Chapter2() {
           <span className="uppercase tracking-widest text-sm">Chapter 2</span>
           <span className="w-8 h-[1px] bg-primary/60"></span>
         </div>
-        <h2 className="text-4xl md:text-6xl font-heading text-foreground">The Beginning of Something Beautiful</h2>
+        <h2 className="text-5xl md:text-7xl font-heading text-foreground font-semibold">The Beginning of Something Beautiful</h2>
       </motion.div>
 
       <div className="max-w-4xl mx-auto">
-        <h3 className="text-3xl md:text-5xl font-heading text-primary leading-relaxed flex flex-wrap justify-center gap-x-3 gap-y-2">
+        <h3 className="text-4xl md:text-6xl font-heading text-primary leading-relaxed flex flex-wrap justify-center gap-x-3 gap-y-2 font-semibold">
           {words.map((word, i) => (
             <motion.span
               key={i}
@@ -382,7 +382,7 @@ function Chapter3() {
           transition={{ duration: 1 }}
         >
           <span className="uppercase tracking-widest text-sm text-primary/80 block mb-6">Chapter 3</span>
-          <h2 className="text-5xl md:text-7xl font-heading text-foreground mb-12">
+          <h2 className="text-6xl md:text-8xl font-heading text-foreground mb-12 font-semibold">
             Somewhere Between Our <br/><span className="text-soft-gold-accent italic">Talks and Laughs...</span>
           </h2>
         </motion.div>
@@ -394,7 +394,7 @@ function Chapter3() {
           transition={{ duration: 1.5, delay: 0.3 }}
           className="relative p-12 md:p-24 rounded-3xl overflow-hidden box-glow bg-white/40 backdrop-blur-sm border border-white/50"
         >
-          <p className="text-2xl md:text-4xl font-heading text-foreground/80 leading-relaxed">
+          <p className="text-3xl md:text-4xl font-heading text-foreground/85 leading-relaxed font-semibold">
             "I didn’t plan to fall in love with you.<br/>
             But somehow... <span className="text-primary font-semibold">you became my favorite place.</span>"
           </p>
@@ -423,7 +423,7 @@ function Chapter4() {
           className="text-center mb-24"
         >
           <span className="uppercase tracking-widest text-sm text-primary/80 block mb-4">Chapter 4</span>
-          <h2 className="text-5xl md:text-7xl font-heading text-foreground">Our Best Memories</h2>
+          <h2 className="text-6xl md:text-8xl font-heading text-foreground font-semibold">Our Best Memories</h2>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
