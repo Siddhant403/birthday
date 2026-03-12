@@ -6,6 +6,9 @@ import { useEffect, useRef, useState } from 'react';
 
 // --- Utility Components ---
 
+const [musicPlaying, setMusicPlaying] = useState(false);
+const audioRef = useRef(null);
+
 const HeartCursor = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isPointer, setIsPointer] = useState(false);
