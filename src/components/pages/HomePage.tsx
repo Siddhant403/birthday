@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from 'react';
 
 // --- Utility Components ---
 
+const [musicPlaying, setMusicPlaying] = useState(false);
 const audioRef = useRef(null);
 useEffect(() => {
   if (audioRef.current) {
