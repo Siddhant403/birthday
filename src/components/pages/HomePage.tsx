@@ -230,7 +230,7 @@ export default function HomePage() {
       </AnimatePresence>
     </div>
   );
-}
+  }
 
 // --- Sections ---
 
