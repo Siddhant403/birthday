@@ -317,7 +317,13 @@ function Chapter1() {
               focalPointY={34.0234375} />
           </motion.div>
           <motion.div style={{ y: y2 }} className="absolute right-0 bottom-10 w-1/2 aspect-square rounded-full overflow-hidden box-glow border-4 border-white z-20">
-            <Image src="https://static.wixstatic.com/media/217bff_8da18d36348c4c1a8a43657472791b27~mv2.png?originWidth=576&originHeight=704" alt="A beautiful moment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+            <Image
+              src="https://static.wixstatic.com/media/217bff_5858b51ddbc44cc38bbca544bf98b558~mv2.jpg"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              originWidth={759}
+              originHeight={689}
+              focalPointX={61.56126482213439}
+              focalPointY={39.404934687953556} />
           </motion.div>
         </div>
       </div>
