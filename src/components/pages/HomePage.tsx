@@ -172,6 +172,8 @@ export default function HomePage() {
       <HeartCursor />
 
       {/* Global Audio Toggle */}
+
+
       <AnimatePresence>
         {storyStarted && (
           <motion.button
