@@ -175,7 +175,9 @@ export default function HomePage() {
       <HeartCursor />
 
       {/* Global Audio Toggle */}
-
+      <audio ref={audioRef} loop>
+  <source src="https://static.wixstatic.com/mp3/217bff_5a01c1830cac44ed88c0da208d64ea74.mp3" type="audio/mpeg" />
+</audio>
 
       <AnimatePresence>
         {storyStarted && (
