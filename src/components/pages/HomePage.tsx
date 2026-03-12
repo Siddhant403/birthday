@@ -308,7 +308,13 @@ function Chapter1() {
 
         <div className="relative h-[60vh] w-full flex justify-center items-center">
           <motion.div style={{ y: y1 }} className="absolute left-0 top-10 w-2/3 aspect-[4/5] rounded-2xl overflow-hidden box-glow z-10">
-            <Image src="https://static.wixstatic.com/media/217bff_3e8414dd26614ca0a13ae3895ead6200~mv2.png?originWidth=576&originHeight=704" alt="Our first memory" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
+            <Image
+              src="https://static.wixstatic.com/media/217bff_fd612fe7fdce4a7aa1358b9386bb03db~mv2.jpeg"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              originWidth={960}
+              originHeight={1280}
+              focalPointX={44.739583333333336}
+              focalPointY={34.0234375} />
           </motion.div>
           <motion.div style={{ y: y2 }} className="absolute right-0 bottom-10 w-1/2 aspect-square rounded-full overflow-hidden box-glow border-4 border-white z-20">
             <Image src="https://static.wixstatic.com/media/217bff_8da18d36348c4c1a8a43657472791b27~mv2.png?originWidth=576&originHeight=704" alt="A beautiful moment" className="w-full h-full object-cover hover:scale-105 transition-transform duration-700" />
@@ -438,7 +444,13 @@ function Chapter4() {
             >
               <div className={`bg-white p-4 pb-12 shadow-xl rounded-sm transform transition-all duration-500 ${memory.rotate} group-hover:rotate-0 group-hover:scale-105 group-hover:shadow-2xl group-hover:z-10`}>
                 <div className="aspect-square overflow-hidden bg-gray-100 mb-4">
-                  <Image src="https://static.wixstatic.com/media/217bff_fe26ae00f8624f8a8ea2dadff45a442a~mv2.png?originWidth=576&originHeight=576" alt={memory.caption} className="w-full h-full object-cover filter grayscale-[20%] group-hover:grayscale-0 transition-all duration-500" />
+                  <Image
+                    src="https://static.wixstatic.com/media/217bff_293fa206273f48a4a5d20921ddebfe89~mv2.png"
+                    className="w-full h-full object-cover filter grayscale-[20%] group-hover:grayscale-0 transition-all duration-500"
+                    originWidth={570}
+                    originHeight={676}
+                    focalPointX={47.192982456140356}
+                    focalPointY={29.06804733727811} />
                 </div>
                 <p className="font-heading text-xl text-center text-red-600/80 italic absolute bottom-4 left-0 right-0 px-4">
                   {memory.caption}
